@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Horticultural Expo 2023 Doha, Qatar</title>
+     <link rel="icon" type="image/x-icon" href="img/Qlogo.png">
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"  integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+     crossorigin="anonymous"
+     referrerpolicy="no-referrer">
+     <meta
+     name="keywords"
+     content="calendar, events, reminders, javascript, html, css, open source coding"
+   />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+</head>   
+<body>
+
+<!--                                NAVBAR                             -->
+    <nav class = "navbar">
+      <a href="#landing">HOME</a>
+      <a href="#overview">OVERVIEW</a> 
+      <a href="#SnA">SCHEDULE AND AGENDA</a> 
+      <a href="#who">WHO SHOULD ATTEND</a>
+      <a href="#TnL">TIMING AND LOCATION</a>
+      <a href="#queries">QUERIES</a>
+    </nav>              
+        
+
+<!---                               LANDING                             -->
+    <section id="landing" class = "landing">
+        <img src = "img/landing3.jpg">
+        
+        <div class="NHBlogo"> <img src = "img/NHBlogo1.png"> </div>
+        <div class = "landingtext"> <b>EXPO<br>2023</b><br>DOHA<br>QATAR </div>
+        
+        <button class = "btnDive" onClick="onClickSignIn()"> SIGN IN </button>
+
+        <div class = "Qlogo"> <img src = "img/Qlogo.png"> </div>
+
+        <!-- Edit the button script functions v -->
+        <div class = "threeButtons">
+            <button class = "button1" onClick="onClickPartnerRegistration()"> Partner<br>Registration </button>
+            <button class = "button2" onClick="OnClickGuestRegistration()"> Guest<br>Registration </button>
+            <button class = "button3"  onClick="loginFuncn()"> B2B </button>
+        </div>
+
+    </section>    
+
+    <script>
+
+        function loginFuncn()
+        {
+          document.location.href="login.html";
+        }
+        function onClickSignIn()
+        {
+          document.location.href="login.html";
+        }
+
+        function onClickPartnerRegistration()
+        {
+          document.location.href="signUp.html";
+        }
+
+        function OnClickGuestRegistration()
+        {
+          document.location.href="signUp.html";
+        }
+
+    </script>
+
+
+
+<!--                                            OVERVIEW                            -->
+    <section class = "overview">
+        <img id="overview" src = "img/overviewImg.jpg">
+        <h1>    OVERVIEW    </h1>
+      <div class="ov">  
+        <p> Qatar aims to host an Expo that attracts the international community, including the 
+            participation of 80 countries, along with international organizations, private sector 
+            representatives, NGOs and the general public. Due to the anticipated diversity of participants, 
+            from top decision-makers to children, Expo 2023 Doha is inspired to offer a multifaceted event 
+            where extraordinary exhibitions, diplomatic encounters, business meetings, public debates and 
+            live shows will take place. 
+        </p>
+      </div>
+      <div class = "boxes">
+        <div class = "days">
+            <span class="num" data-val="179"><b>000</b></span>
+            <span class="text"><b><br>DAYS<br>   _ </b> </span>
+        </div>
+
+        <div class = "themes">
+            <span class="num" data-val="12"><b>0</b></span>
+            <span class="text"><b><br>THEMES<br>   _ </b> </span>
+        </div>
+
+        <div class = "companies">
+            <span class="num" data-val="150"><b>&emsp;000</b></span>+
+            <span class="text"><b><br>COMPANIES<br>   _ </b> </span>
+        </div>
+
+            
+        <div class = "visitors">
+            <span class="num" data-val="20"><b>00</b></span>K+
+            <span class="text"><b><br>VISITORS<br>   _ </b> </span>
+        </div>
+      </div>
+
+      <script>
+        window.addEventListener('scroll', function() 
+          {
+            var fadeElements = document.querySelectorAll('h1');
+
+            for (var i = 0; i < fadeElements.length; i++) 
+            {
+              var fadeElement = fadeElements[i];
+              var position = fadeElement.getBoundingClientRect().top;
+              var windowHeight = window.innerHeight;
+
+              if (position < windowHeight - 100) 
+              {
+                fadeElement.classList.add('show');
+              }
+            }
+          });
+        let valueDisplays = document.querySelectorAll(".num");
+        let interval = 7000;
+
+        valueDisplays.forEach((valueDisplay) => 
+        {
+            let startValue = 0;
+            let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+            let duration = Math.floor(interval / endValue);
+            let counter = setInterval(function () 
+            {
+                startValue +=1;
+                valueDisplay.textContent = startValue;
+                if (startValue == endValue) 
+                {
+                    clearInterval(counter);
+                }
+            }, duration);
+        });
+
+        window.addEventListener('scroll', function() 
+        {
+          var fadeElements = document.querySelectorAll('.ov');
+
+          for (var i = 0; i < fadeElements.length; i++) 
+          {
+            var fadeElement = fadeElements[i];
+            var position = fadeElement.getBoundingClientRect().top;
+            var windowHeight = window.innerHeight;
+
+            if (position < windowHeight - 100) 
+            {
+              fadeElement.classList.add('show');
+            }
+          }
+        });
+      </script>
+    
+    </section>
+
+
+<!--                                         SCHEDULE AND AGENDA                     -->
+    <section class = "SnA">
+        <hr  id="SnA" style="margin-left: 120px; margin-top: 60px; margin-bottom: 40px; width: 8%; border: 2px solid #00A941">
+        <h2 >SCHEDULE AND AGENDA</h2>
+        <h1><strong>PROPOSED <br> THEMES</strong></h1>
+        <p class="SnAp">The Expo Doha 2023 is organized around the theme of ‘Desertification’ which is growing ecological issue across
+            the globe. <br><br>
+            
+            The sub-themes of the event are Modern Agriculture, Technology & Innovation, Environmental Awareness & Sustainability.
+        </p>
+
+        <div class="littleBox">
+            <div class = "boxText"> <b>EXPO<br>2023</b><br>DOHA<br>QATAR </div>
+            <div class = "Qlogo2">
+                 <img src="img/Qlogo.png">
+            </div>
+
+        </div>
+
+        
+        <div class = "rightSide">
+            <p class="rightSideP">
+                Along the same, the following are some of the proposed themes and sub-themes.
+            </p>
+
+            <div class="timeline">
+                <div class="outer">
+                  <div class="card">
+                    <div class="info">
+                      <h3 class="title">Week 1</h3>
+                      <p>Value Chain </p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="info">
+                      <h3 class="title">Week 2</h3>
+                      <p>Sustainable Horticulture Practices </p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="info">
+                      <h3 class="title">Week 3</h3>
+                      <p>Education & Research </p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="info">
+                      <h3 class="title">Week 4</h3>
+                      <p>Urban Horticulture & Landscaping </p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="info">
+                      <h3 class="title">Week 5</h3>
+                      <p>Bio-diversity & Conservation</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="info">
+                      <h3 class="title">Week 6</h3>
+                      <p>International Trade & Cooperation</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="info">
+                      <h3 class="title">Week 7</h3>
+                      <p>Food Security & Nutrition </p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="info">
+                      <h3 class="title">Week 8</h3>
+                      <p>Climate Change Adaption </p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="info">
+                      <h3 class="title">Week 9</h3>
+                      <p>Women’s Empowerment </p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="info">
+                      <h3 class="title">Week 10</h3>
+                      <p>Horticulture & Technology </p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="info">
+                      <h3 class="title">Week 11</h3>
+                      <p>Indian Horticulture & Export </p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="info">
+                      <h3 class="title">Week 12</h3>
+                      <p>Horticulture & Cultural Heritage </p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+        </div>
+
+        <script>          
+          window.addEventListener('scroll', function() 
+          {
+            var fadeElements = document.querySelectorAll('h1');
+
+            for (var i = 0; i < fadeElements.length; i++) 
+            {
+              var fadeElement = fadeElements[i];
+              var position = fadeElement.getBoundingClientRect().top;
+              var windowHeight = window.innerHeight;
+
+              if (position < windowHeight - 100) 
+              {
+                fadeElement.classList.add('show');
+              }
+            }
+          });
+
+          window.addEventListener('scroll', function() 
+          {
+            var fadeElements = document.querySelectorAll('.SnAp');
+
+            for (var i = 0; i < fadeElements.length; i++) 
+            {
+              var fadeElement = fadeElements[i];
+              var position = fadeElement.getBoundingClientRect().top;
+              var windowHeight = window.innerHeight;
+
+              if (position < windowHeight - 100) 
+              {
+                fadeElement.classList.add('show');
+              }
+            }
+          });
+
+
+          window.addEventListener('scroll', function() 
+          {
+            var fadeElements = document.querySelectorAll('.rightSideP');
+
+            for (var i = 0; i < fadeElements.length; i++) 
+            {
+              var fadeElement = fadeElements[i];
+              var position = fadeElement.getBoundingClientRect().top;
+              var windowHeight = window.innerHeight;
+
+              if (position < windowHeight - 100) 
+              {
+                fadeElement.classList.add('show');
+              }
+            }
+          });
+        
+        </script>
+
+    </section>
+
+  
+<!--                                    WHO SHOULD ATTEND                          -->
+    <section id="who" class="who">
+      <hr>
+      <img src = "img/whoImg.jpg">
+
+      <h1><strong>WHO SHOULD ATTEND</strong></h1>
+
+      <ul class="whoList">
+        <div class="leftContainer">
+          <li>Embassies, High Commissions, Consulates</li>
+          <li>Invest and Trade Commissions</li>
+          <li>Nursery Owners and Managers</li>
+          <li>Horticulturists from Tourism Industry</li>
+          <li>Landscaping Companies and Experts</li>
+          <li>Horticultural Researchers and Academicians</li>
+          <li>Floriculturists and Flower Growers</li>
+          <li>Environmentalists and Conservationists</li>
+        </div>
+        
+        <div class="rightContainer">
+          <li>Urban Planners and City Greening Experts</li>
+          <li>Sustainability and Green Initiatives Experts</li>
+          <li>Horticulture Technology and Equipment Suppliers</li>
+          <li>Horticulture Students and Trainees</li>
+          <li>Botanical Gardens and Arboretums Representatives</li>
+          <li>Horticulture Consultants and Experts</li>
+          <li>Farmers and Growers of Horticultural Produce</li>
+          <li>Media and Journalists covering Horticultural and Tourism</li>
+        </div>
+      </ul>
+
+      <script>
+        window.addEventListener('scroll', function() 
+        {
+          var fadeElements = document.querySelectorAll('.whoList', 'h1');
+
+          for (var i = 0; i < fadeElements.length; i++) 
+          {
+            var fadeElement = fadeElements[i];
+            var position = fadeElement.getBoundingClientRect().top;
+            var windowHeight = window.innerHeight;
+
+            if (position < windowHeight - 100) 
+            {
+              fadeElement.classList.add('show');
+            }
+          }
+        });
+      </script>
+    </section>
+
+
+<!--                                        TIMING & LOCATION                           -->
+    <section id="TnL"class="TnL">
+      <hr style="position: absolute; margin-left: 120px; top: 85px; width: 8%; border: 2px solid #00A941">
+      <div class="TnLleftSide">
+        <h1>TIMING<br>& LOCATION</h1>
+      </div>
+      
+      <h2>Doha, Qatar</h2>
+      <div class="TnLrightSide">
+        <div class="start">
+          <hr style="position: absolute; margin-right: 120px; top: 204px; left: 772px; width: 4%; 
+                    border: 3px solid #00A941; border-radius: 8px; transform: rotateZ(90deg) ;">
+          <p>Start At</p>
+          <h4>2 October 2023</h4>
+        </div>
+
+        <div class="end">
+          <hr style="position: absolute; margin-right: 120px; top: 204px; left: 1135px; width: 4%; 
+                    border: 3px solid #00A941; border-radius: 8px; transform: rotateZ(90deg) ;">
+          <p>End At</p>
+          <h4>28 March 2024</h4>
+        </div>
+      </div>
+      
+      <script>
+        window.addEventListener('scroll', function() 
+        {
+          var fadeElements = document.querySelectorAll('.TnLleftSide');
+
+          for (var i = 0; i < fadeElements.length; i++) {
+            var fadeElement = fadeElements[i];
+            var position = fadeElement.getBoundingClientRect().top;
+            var windowHeight = window.innerHeight;
+
+            if (position < windowHeight - 100) {
+              fadeElement.classList.add('show');
+            }
+          }
+        });
+      </script>
+    </section>
+
+
+<!--                                        QUERIES                                            -->
+    <section class = "queries">
+      <hr id="queries" style="position: absolute; margin-left: 120px; top: 125px; margin-bottom: 40px; width: 8%; border: 2px solid #00A941">
+      <h3>QUERIES</h3>  
+
+      <div class="container">
+        <form action="https://formspree.io/f/xwkdploz" method="POST">
+      
+          <label for="name">Name</label><br>
+          <input type="text" id="name" name="name" placeholder="John Doe" required autocomplete="off">
+          
+          <br>
+          
+          <label for="mail">Mail</label><br>
+          <input type="email" id="mail" name="mail" placeholder="john.doe@abcmail.com" required autocomplete="off">
+
+          <br>
+
+          <label for="phone">Phone</label><br>
+          <input type="text" id="phone" name="phone" placeholder="+123456789" required autocomplete="off">
+
+          <br>
+      
+          <label for="message">Message</label><br>
+          <textarea id="message" name="message" placeholder="Write your message.." required autocomplete="off"></textarea>
+      
+          <br>
+
+          <input type="submit" id="submitButton" value="Send Message">
+      
+        </form>
+      </div>
+
+      <p class="queriesLeftSide">#Expo2023Doha</p>
+
+      <a class="twitter-timeline" data-width="500" data-height="480" data-theme="light" 
+          href="https://twitter.com/Expo2023Doha?ref_src=twsrc%5Etfw">Tweets by Expo2023Doha
+      </a> 
+      
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      <script>
+
+
+        window.addEventListener('scroll', function() 
+        {
+          var fadeElements = document.querySelectorAll('.queriesLeftSide');
+
+          for (var i = 0; i < fadeElements.length; i++) 
+          {
+            var fadeElement = fadeElements[i];
+            var position = fadeElement.getBoundingClientRect().top;
+            var windowHeight = window.innerHeight;
+
+            if (position < windowHeight - 100) 
+            {
+              fadeElement.classList.add('show');
+            }
+          }
+        });
+
+        window.addEventListener('scroll', function() 
+        {
+          var fadeElements = document.querySelectorAll('.container');
+
+          for (var i = 0; i < fadeElements.length; i++) 
+          {
+            var fadeElement = fadeElements[i];
+            var position = fadeElement.getBoundingClientRect().top;
+            var windowHeight = window.innerHeight;
+
+            if (position < windowHeight - 100) 
+            {
+              fadeElement.classList.add('show');
+            }
+          }
+        });
+      </script>
+
+
+
+    </section>
+
+<!--                                            FOOTER                                  -->
+
+    <section class="footer">
+      <p>By National Horticulture Board</p>
+    </section>
+
+
+</body>

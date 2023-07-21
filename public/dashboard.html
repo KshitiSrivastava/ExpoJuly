@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Dashboard</title>
+     <link rel="icon" type="image/x-icon" href="img/Qlogo.png">
+     <link rel="stylesheet" href="css/dashboardStyle.css">
+     <link rel="stylesheet" href="evo-calendar.min.css">
+     <link rel="stylesheet" href="evo-calendar.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>   
+<body>
+    
+    <nav class = "navbar">
+        <a href="index.html#landing">HOME</a>
+        <a href="index.html#overview">OVERVIEW</a> 
+        <a href="index.html#SnA">SCHEDULE AND AGENDA</a> 
+        <a href="index.html#who">WHO SHOULD ATTEND</a>
+        <a href="index.html#TnL">TIMING AND LOCATION</a>
+        <a href="index.html#queries">QUERIES</a>
+    </nav>     
+
+
+<!---                               WAVE                             -->
+<div class="testdiv">
+    <img class="avatar" src="img/img_avatar2.png">
+    <div class="belowImg">
+        <p class="nameDash">John Doe</p>
+        <p class="statusDash">Visitor</p>
+    </div>
+
+    <div class="restDeets">
+        <p>CEO</p>
+        <p>XYZ Pvt Ltd</p>
+        <p>India</p>
+        <p>+9123456789</p>
+        <p>abc@xyzmail.com</p>
+    </div>
+</div>
+
+<!--                            CALENDAR                               -->
+ <section id="main" class="main">
+    <hr class="hr1">    
+    <h1> Calendar of Events</h1>
+      <hr class="hr2">
+<div id="calendar"></div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script src="evo-calendar.min.js"></script>
+ <script> 
+    $(document).ready(function() {
+        $('#calendar').evoCalendar({
+            theme: "Default",
+            calendarEvents: [
+      {
+        id: 'bHay68s', // Event's ID (required)
+        name: "Session: ABC", // Event name (required)
+        date: "July/21/2020", // Event date (required)
+        description: "<br>Timing: 01:00 to 02:30 PM AST <br><br> Location: Hall XYZ",
+        // description: "Location: Hall XYZ",
+        type: "holiday", // Event type (required)
+        everyYear: true // Same event every year (optional)
+      },
+      {
+        name: "Session XYZ",
+        // badge: "02/13 - 02/15", // Event badge (optional)
+        date: ["July/25/2023", "July/27/2023"], // Date range
+        description: "<br>Timing: 01:00 to 02:30 PM AST <br><br> Location: Hall XYZ", // Event description (optional)
+        type: "event",
+        color: "#B537DB" // Event custom color (optional)
+      }
+    ]
+        })
+    })
+</script>
+
+<section id="meetings" class="meetings">
+    <hr class="hr1">    
+    <h1> Meetings Scheduled</h1>
+    <hr class="hr2">
+
+    <p>No meetings scheduled currently</p>
+
+    <button class="request">Request a Meeting</button>
+
+
+
+<!--                                            FOOTER                                  -->
+
+<section class="footer">
+    <p>By National Horticulture Board</p>
+  </section>
+
+
+
+</body>
+</html>
+

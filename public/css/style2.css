@@ -1,0 +1,634 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+body
+{
+    background-color: black;
+}
+
+/*                      NAVBAR              */
+.navbar
+{
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 30px;
+    position: sticky;
+    background-color: white;
+}
+
+.navbar > button
+{
+    font-family: 'Hubballi', cursive;
+    align-items: center;
+    float:center;
+    font-size: 10px;
+    margin-top: 0px;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    padding-left: 0px;
+    padding-right: 0px; 
+    padding-top: 5px;
+    padding-bottom: 25px;
+    position: inherit;   
+}
+
+.navbar :hover
+{
+    cursor: pointer;
+    font-size: 12px;
+    /*border: 3px solid #708090;  
+    border-right: 3px solid #708090;
+    border-left: 3px solid #708090; */
+    transition: 0.5s;
+    background-color: #FEFFFF;
+}
+
+
+.landing > img
+{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.911), rgba(0, 0, 0, 0.834));
+    width: 100%;
+}
+
+
+.NHBlogo > img
+{
+    position: absolute;
+    top: 8%;
+    left: 10%;
+    background: transparent;
+    padding: 20px;
+    height: 60px;
+    width: 60px;
+}
+
+.landingtext
+{
+    position: absolute;
+    top: 200px;
+    left: 150px;
+    font-size: 55px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.landing .btnDive 
+{
+  position: absolute;
+  top: 15%;
+  right: 10%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: white;
+  background-color: orange;
+  font-size: 16px;
+  padding: 12px 24px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10%;
+}
+
+.Qlogo > img
+{
+    position: absolute;
+    top: 100px;
+    left: 350px;
+    height: 450px;
+    width: 300px;
+}
+
+.threeButtons
+{
+    position: absolute;
+    top: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-family: 'Poppins', sans-serif;    
+    height: 80px;  
+    width: 80%;
+    margin: 50px;
+    font-size: 30px;
+    padding: 50px; 
+}
+
+.threeButtons .button1, .button2, .button3
+{
+    position: sticky;
+    color: white;
+    background-color: black;
+    font-size: 20px;
+    border-radius: 8px;
+    border-left-color: #00CD4F;
+    border-left-width: 8px;
+    font-family: 'Poppins', sans-serif;    
+    text-align: left;   
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    width: 165px;
+    height: 80px;
+}
+
+.threeButtons :hover
+{
+    cursor: pointer;
+    transform: scale(1.15);
+}
+
+
+/*                 OVERVIEW                 */
+.overview
+{
+    /* margin-top: 50px; */
+    background-color: white;
+}
+
+
+.overview > img
+{
+    height: 500px;
+}
+
+.overview > h1
+{
+    position: absolute;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 37px;
+    line-height: 50%;
+    background-color: black;
+    color: white;
+    width: 180px;
+    height: 10px;
+    left: 420px;
+    top: 800px;
+    text-align: center;
+    padding: 50px;
+    font-family: 'Poppins', sans-serif;    
+}
+
+
+.overview > p
+{
+    position: absolute;
+    left: 600px;
+    top: 950px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 37px;
+}
+
+.boxes
+{
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.boxes .days, .themes, .companies, .visitors
+{
+    width: 91px;
+    height: 91px;
+    margin: 50px;
+    background-color: black;
+    color: white;  
+    padding: 50px;  
+    border-radius: 17px;
+    position: sticky;
+    font-size: 43px;
+    font-family: 'Poppins', sans-serif;       
+    font-style: normal;
+    font-weight: 50px;
+    text-align: center; 
+    line-height: 35px;
+}
+
+
+.boxes .text 
+{
+    color: #00CD4F;  
+    font-size: 23px;
+    font-family: 'Poppins', sans-serif;       
+    font-style: normal;
+    font-weight: 50px;
+}
+
+/*          SCHEDULE AND AGENDA            */
+.SnA
+{
+    background-color: white;
+    height: 1600px;
+    padding: 100px
+}
+
+.SnA > h2
+{
+    margin-left: 120px;
+    color: #B0B0B0;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 23px;
+}
+
+.SnA > h1
+{
+    margin-left: 120px;
+    margin-top: -10px;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 67px;
+    line-height: 77px;
+    font-weight:10000px;
+}
+
+.SnA > p
+{
+    margin-left: 120px;
+    margin-top: -40px;
+    color: #464646;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    width: 589px;
+
+}
+
+.littleBox
+{
+    margin-left: 120px;
+    background: #000000;
+    border-radius: 17px;
+    width: 500px;
+    height: 325px;
+    margin-top: 100px;
+}
+
+.Qlogo2 > img
+{
+    margin-left: 220px;
+    height: 405px;
+    width: 255px;
+    margin-top: -40px;
+}
+
+.littleBox .boxText
+{
+    position: absolute;
+    /* margin-top: 65px;
+    margin-left: 45px; */
+    padding-top: 65px;
+    padding-left: 42px;
+    line-height: 50px;
+    font-size: 55px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.rightSide > p
+{
+    margin-right: 120px;
+    position: absolute;
+    height: 64px;
+    left: 818px;
+    top: 1580px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+}
+    
+
+/* Timeline Container */
+.timeline 
+{
+    margin-right: 10px;
+    position: absolute;
+    height: 64px;
+    left: 825px;
+    top: 1700px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+}
+  
+  /* Outer Layer with the timeline border */
+.outer 
+{
+    /* width: 990px; */
+    border-left: 1px dashed #B1B1B1;
+}
+  
+  /* Card container */
+  .card {
+    position: relative;
+    width: 500px;
+    height: 100px;
+    left: 31px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 0;
+    color: #00A941;
+  }
+  
+  /* Information about the timeline */
+.info 
+{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5px;
+}
+  
+  /* Title of the card */
+.title 
+{
+    color: #212121;
+    position: relative;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 18px;
+    font-style: normal;
+}
+  
+  /* Timeline dot  */
+  .title::before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background: white;
+    border-radius: 999px;
+    left: -40px;
+    top: -9px;
+    /* border: 3px dashed; */
+    background-color: #00A941;;
+  }
+  
+
+/*                                  WHO SHOULD ATTEND                           */
+.who > img
+{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.911), rgba(0, 0, 0, 0.834));
+    width: 99%;
+    height: 99.75%;
+    position: absolute;
+    top: 3100px;
+}
+
+.who > h1
+{
+    position: absolute;
+    top: 3180px;
+    margin-left: 120px;  
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 57px;
+    line-height: 65px;
+}
+
+.whoList
+{
+    position: absolute;
+    top: 3390px;
+}
+
+.whoList .leftContainer
+{
+    position: absolute;
+    margin-left: 86px;  
+}
+
+.whoList .rightContainer
+{
+    position: absolute;
+    margin-left: 886px;   
+}
+
+
+ul 
+{
+    list-style-type: none;  
+}
+  
+ul li 
+{ 
+    height: 60px;
+    width: 530px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 19px;
+    color: white;
+}
+  
+ul li:before 
+{ 
+    background-color: #00A941;
+    border-radius: 50%;
+    content: "";
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 2px;
+    height: 10px;
+    width: 10px;
+}
+
+/*                                          Timing & Location                          */
+.TnL
+{
+    position: absolute;
+    /* background-color: black; */
+    width: 99%;
+    height: 300px;
+    top: 3848px;
+}
+
+.TnL > h1
+{
+    position: absolute;
+    top: 85px;
+    margin-left: 120px;  
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 57px;
+    line-height: 65px;
+}
+
+.TnL > h2
+{
+    position: absolute;
+    top: 50px;
+    left: 800px; 
+    margin-right: 120px; 
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 65px;
+}
+
+.start > p
+{
+    color: white;
+    position: absolute;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    top: 165px;
+    left: 833px; 
+}
+
+.start > h4
+{
+    color: white;
+    position: absolute;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    left: 833px; 
+    top: 170px;
+}
+
+.end > p
+{
+    color: white;
+    position: absolute;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    top: 165px;
+    left: 1196px; 
+}
+
+.end > h4
+{
+    color: white;
+    position: absolute;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    left: 1196px; 
+    top: 170px;
+}
+
+
+/*                                              QUERIES                                              */
+.queries
+{
+    position: absolute;
+    /* background-color: black; */
+    width: 99%;
+    height: 840px;
+    top: 4100px;
+}
+
+.queries > h3
+{
+    color: white;
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-size: 57px;
+    line-height: 65px;
+    left: 800px; 
+    top: 120px;
+}
+
+.container 
+{
+    position: absolute;
+    color: #9B9B9B;
+    left: 800px; 
+    top: 300px;
+    width: 500px;
+    height: 350px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+}
+
+#name, #phone, #mail, #message
+{
+    width: 600px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    background-color: black;
+    border: none;
+    border-bottom: solid 3px    #D9D9D9;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    color: #9B9B9B;
+}
+
+#submitButton
+{
+    position: absolute;
+    width: 235px;
+    height: 65px;
+    right: -100px;
+    top: 390px;
+    background: #00A941;
+    border-radius: 4px;
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 23px;
+line-height: 18px;
+color: white;
+}
+
+.twitter-timeline
+{
+    position: absolute;
+    left: 120px;
+    top: 300px;   
+}
+
+.queries > p
+{
+    color: white;
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-size: 57px;
+    line-height: 65px;
+    left: 120px; 
+    top: 120px;
+    font-weight: 800;
+}
+
+/*                                              FOOTER                                  */
+.footer 
+{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #EFEFEF;
+    text-align: center;
+    top: 4930px;
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+}

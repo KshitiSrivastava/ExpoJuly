@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Login</title>
+     <link rel="icon" type="image/x-icon" href="img/Qlogo.png">
+
+     <link rel="stylesheet" href="css/loginStyle.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>   
+<body>
+    
+    <nav class = "navbar">
+        <a href="index.html#landing">HOME</a>
+        <a href="index.html#overview">OVERVIEW</a> 
+        <a href="index.html#SnA">SCHEDULE AND AGENDA</a> 
+        <a href="index.html#who">WHO SHOULD ATTEND</a>
+        <a href="index.html#TnL">TIMING AND LOCATION</a>
+        <a href="index.html#queries">QUERIES</a>
+    </nav>     
+
+    <hr style="position: absolute; margin-left: 120px; top: 85px; margin-bottom: 40px; width: 8%; border: 2px solid #00A941">
+        <h1>LOGIN</h1>
+
+        <div class="modal">
+            <form action="/login" method="POST">
+
+                <div class="row">                    
+                    <div class="col">
+                        <a href="#" class="fb btn">
+                            <i class="fa fa-facebook fa-fw"></i> Continue with Facebook
+                        </a>
+          
+                        <a href="#" class="twitter btn">
+                            <i class="fa fa-twitter fa-fw"></i> Continue with Twitter
+                        </a>
+           
+                        <a href="#" class="google btn">
+                            <i class="fa fa-google fa-fw"></i> Continue with Google
+                        </a>
+                    </div>
+                    
+                    <hr id = "verticalLine">     
+          
+                    <div class="col2">   
+                        <!-- <form action="action_page.php"> -->
+                            <form action="/login" method="POST">
+                            <label for="mail">Official E-Mail ID</label><br>
+                            <input type="email" id="mail" name="mail" placeholder="john.doe@abcmail.com">
+                  
+                            <br>
+                  
+                            <label for="password">Password</label><br>
+                            <input type="password" id="password" name="password" placeholder="Password">
+                            <img src="img/visible.png" id="visibleIcon" onclick="visibleFunction()">
+
+                            <br>
+        
+                            <button id="submitButton" onClick="onClickFuncn()">LOGIN</button>
+                            
+                            <!-- <input type="submit" id="submitButton" value="LOGIN" onclick="window.location.href='dashboard.html'"> -->
+                        </form>
+                    </div>
+               </div>
+            </form>
+        </div>
+        <script>
+                function onClickFuncn() 
+                {
+                    document.location.href="signUp.html";
+                }
+            
+        </script>
+
+        <a href="#" class="forgotPassword">Forgot Password</a>
+        
+        <h3>New here?  <a href="signUp.html" class="signUp"> Create an account now!</a> </h3>
+
+
+        <section class="footer">
+            <p>By National Horticulture Board</p>
+        </section>
+      
+        <script>
+            function visibleFunction() 
+            {
+                var x = document.getElementById("password");
+                if (x.type === "password") 
+                {
+                    x.type = "text";
+                } 
+                else 
+                {
+                    x.type = "password";
+                }
+            }
+        </script>
+</body>

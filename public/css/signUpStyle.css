@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body
+{
+    background-color: black;
+    font-size: 16px;
+}
+.navbar
+{
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 30px;
+    position: sticky;
+    background-color: transparent;
+    margin-top: -1rem;
+}
+
+.navbar > a
+{
+    color: white;
+    font-family: 'Poppins';
+    align-items: center;
+    float:center;
+    font-size: 13px;
+    margin-top: 0px;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    padding-left: 0px;
+    padding-right: 0px; 
+    padding-top: 5px;
+    padding-bottom: 25px;
+    position: inherit;   
+    text-decoration:none
+}
+
+.navbar :hover
+{
+    cursor: pointer;
+    border-bottom: 3px solid #D3D3D3;
+}
+
+
+h1
+{
+    position: absolute;
+    top: 5.3125rem;
+    margin-left: 7.5rem;  
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.5625rem;
+    line-height: 4.0625rem;
+}
+
+.sso 
+{
+    position: absolute;
+    float: left;
+    width: 50%;
+    margin: auto;
+    padding: 0 3.125rem;
+    margin-top: 3.75rem;
+    position: absolute;
+    margin-left: 7.5rem;      
+    margin-top: 17em;
+    border-radius: 0.3125rem;
+    width: 35.375rem;
+    height: 28.125rem;
+}
+
+.fb 
+{
+    background-color: #3B5998;
+    color: white;
+}
+  
+.twitter 
+{
+    background-color: #55ACEE;
+    color: white;
+}
+  
+.google 
+{
+    background-color: #dd4b39;
+    color: white;
+}
+
+.sso .btn 
+{
+    width: 80%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 0.25rem;
+    margin: 0.3125rem 0;
+    opacity: 1.0;
+    display: inline-block;
+    font-size: 1.0625rem;
+    line-height: 1.5625rem;
+    text-decoration: none; 
+}  
+
+#verticalLine
+{
+    position: absolute; 
+    margin-top: 34rem;
+    left: 20.5rem; 
+    width: 56%; 
+    border: 0.0938rem solid #B0B0B0; 
+    transform: rotateZ(90deg) ;
+} 
+
+.signUpForm
+{
+    position: absolute;
+    color: #9B9B9B;
+    margin-left: 52.5rem;      
+    margin-top: 10rem;
+    border-radius: 0.3125rem;
+    width: 35.375rem;
+    height: 28.125rem;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+}
+
+#name, #mail, #phone, #password, #organization, #designation, #Iam, #country
+{
+    width: 32.0rem;
+    margin-top: 0.625rem;
+    margin-bottom: 1.875rem;
+    margin-right: 20%;
+    background-color: black;
+    border: none;
+    border-bottom: solid 3px #D9D9D9;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    color: #9B9B9B;
+}
+
+#visibleIcon 
+{
+    width: 1.5rem;
+    height: 1.5em;
+    cursor: pointer;
+    position: absolute;
+    right: 3rem;
+    top: 40rem;
+}
+
+#submitButton
+{
+    margin-right: 20%;
+    position: absolute;
+    width: 9.375rem;
+    height: 3.125rem;
+    margin-left: 23.125rem;
+    margin-top: 1.25rem;
+    background: #00A941;
+    border-radius: 0.25rem;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.125rem;
+    color: white;
+    cursor: pointer;
+}
+
+h3
+{
+    position: absolute;
+    color: #D9D9D9;
+    /* padding-top: 50rem; */
+    margin-left: 28rem;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-size: 1.75rem;
+    margin-top: 65rem;
+    
+}
+
+a
+{
+    color: #D9D9D9;
+}
+
+
+.footer 
+{
+    margin-top: 20rem;
+    position: absolute;
+    margin-right: 0.0625rem;
+    width: 94.25rem;
+    height: 5.25rem;
+    background-color: #EFEFEF;
+    text-align: center;
+    top: 56.125rem;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5625rem;
+}
